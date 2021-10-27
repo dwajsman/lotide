@@ -24,7 +24,7 @@ function without(firstArr, secondArr) {
     for (let j = 0; j < secondArr.length; j++) {
       const secondElement = secondArr[j];
 
-      if (firstElement === secondElement) {
+      if (assertEqual(firstElement, secondElement)) {
         //console.log ("removed item: " + firstElement);
         newArr.splice(i, 1)
       }
