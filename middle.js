@@ -70,6 +70,7 @@ let testF = middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
 // console.log(testC);
 // console.log(testD);
 // console.log(testE);
+
 // console.log(testF);
 
 assertArraysEqual(testA, []);
@@ -78,9 +79,6 @@ assertArraysEqual(testC, [2]);
 assertArraysEqual(testD, [3]);
 assertArraysEqual(testE, [2, 3]);
 assertArraysEqual(testF, [3, 4]);
-
-
-
 
 // FUNCTION IMPLEMENTATION
 
