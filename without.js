@@ -1,11 +1,4 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  
-  if (actual === expected) {
-    return true;
-  }
-  return false;
-};
+const assertEqual = require("./assertEqual");
 //compare elements from firstArr to elements from secondArr
 
 function without(firstArr, secondArr) {
@@ -32,20 +25,23 @@ function without(firstArr, secondArr) {
     }
 
   }
-  return newArr;
+  //console.log("Before: " + firstArr);
   //console.log("new Arr: " + newArr);
-  //console.log("after: " + firstArr);
+
+  return newArr;
+  
 
 }
 
 
-without([1, 2, 3], [1]) 
+//without([1, 2, 3], [1]) 
 // => [2, 3]
 
-without(["1", "2", "3"], [1, 2, "3"]) 
+//without(["1", "2", "3"], [1, 2, "3"]) 
 // => ["1", "2"]
 
 //console.log(without([1, 2, 3], [1]))
 //console.log(without(["1", "2", "3"], [1, 2, "3"]))
 
 
+module.exports = without;

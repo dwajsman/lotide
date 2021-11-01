@@ -1,26 +1,5 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-    return true;
-  }
-  console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  return false;
-};
-
-
-const eqArrays = function(arr1, arr2) {
-  let resultArr = true;
-  //console.log(arr1, arr2);
-  for (let index = 0; index < arr1.length; index++) {
-    //console.log(arr1[index], arr2[index], assertEqual(arr1[index], arr2[index]));
-    resultArr = assertEqual(arr1[index], arr2[index]);
-  }
-  return resultArr;
-};
-
-
+const assertEqual = require("./assertEqual");
+const eqArrays = require("./eqArrays");
 
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
@@ -53,13 +32,15 @@ const eqObjects = function(object1, object2) {
 // const ba = { b: "2", a: "1" };
 // assertEqual(eqObjects(ab, ba), true);
 
-const ab1 = { a: "1", b: ["2", "3"] };
-const ba1 = { b: ["2", "3"], a: "1" };
-assertEqual(eqObjects(ab1, ba1), true);
+// const ab1 = { a: "1", b: ["2", "3"] };
+// const ba1 = { b: ["2", "3"], a: "1" };
+// assertEqual(eqObjects(ab1, ba1), true);
 
-const ab2 = { a: "1", b: ["2", "3"] };
-const ba2 = { b: ["2", "4"], a: "1" };
-assertEqual(eqObjects(ab2, ba2), false);
+// const ab2 = { a: "1", b: ["2", "3"] };
+// const ba2 = { b: ["2", "4"], a: "1" };
+// assertEqual(eqObjects(ab2, ba2), false);
 
 // const abc = { a: "1", b: "2", c: "3" };
 // assertEqual(eqObjects(ab, abc), false);
+
+module.exports = eqObjects;

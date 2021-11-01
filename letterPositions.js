@@ -29,6 +29,8 @@ const letterPositions = function(string) {
 
 // test
 
-letterPositions('LHL');
-letterPositions('because that');
-letterPositions('we can skip');
+// letterPositions('LHL');
+// letterPositions('because that');
+// letterPositions('we can skip');
+
+module.exports = letterPositions;
