@@ -22,7 +22,7 @@ const tail = require('../tail');
 
 // TEST CODE
 
-describe('tail TESTS', function() {
+describe('tail TESTS', function () {
 
 
   // const result = tail(["Hello", "Lighthouse", "Labs"]);
@@ -35,12 +35,11 @@ describe('tail TESTS', function() {
   });
 
 
-// const words = ["Yo Yo", "Lighthouse", "Labs"];
-// tail(words); // no need to capture the return value since we are not checking it
-// assertEqual(words.length, 3); // original array should still have 3 elements!
+  // const words = ["Yo Yo", "Lighthouse", "Labs"];
+  // tail(words); // no need to capture the return value since we are not checking it
+  // assertEqual(words.length, 3); // original array should still have 3 elements!
 
-
+  // How do you test that the original Arr was not changed? Should I add a function to the tail.js file?
 
 
 });
-
